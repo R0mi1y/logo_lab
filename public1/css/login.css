@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css?family=Mukta');
+
+body {
+    font-family: 'Mukta', sans-serif;
+    height: 100vh;
+    min-height: 550px;
+    background-image: url(../images/bgLogin1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow-y: hidden;
+}
+
+.container1 {
+    position: absolute;
+    top: 50%;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#navNav {
+    background-color: #406d86;
+}
+
+.login-reg-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    transform: translateY(-50%);
+    background: #1680ba;
+    color: #ffffff;
+}
+
+.white-panel {
+    display: flex;
+    text-align: center;
+    background-color: rgb(252, 249, 188);
+    height: auto;
+    transition: .3s ease-in-out;
+    z-index: 0;
+    box-shadow: 0 0 15px 9px #00000096;
+}
+
+a {
+    text-decoration: none;
+    color: #2c7715;
+}
+
+/* LOGIN FORM */
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+header,
+.navbar {
+    background-color: #0075b4;
+}
+
+.white-panel {
+    border-radius: 10px;
+    /* text-align: center; */
+    max-width: 240px;
+    padding: 90px 30px 20px;
+    color: #000000;
+}
+
+.input {
+    border: 0;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    background-color: transparent;
+    outline: none;
+    padding: 0;
+}
+
+.a {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.input-single {
+    position: relative;
+    margin: 20px 0;
+}
+
+.white-panel .input-single .input:valid~label,
+.white-panel .input-single .input:focus~label {
+    transform: translateY(-20px);
+    font-size: 12px;
+    transition: all 0.07s;
+    color: rgb(121, 121, 121);
+}
+
+.input-single label {
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: all 0.2s;
+    cursor: text;
+    color: #000000;
+}
+
+button.login-btn {
+    padding: 5px 10px 9px 10px;
+    /* superior, direito, inferior e esquerdo */
+    border: unset;
+    border-radius: 40px;
+    color: #ffffff;
+    z-index: 1;
+    background: rgb(0, 0, 0);
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms;
+    overflow: hidden;
+}
+
+button.login-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #ffffff;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms
+}
+
+button.login-btn:hover {
+    color: #000000;
+}
+
+button.login-btn:hover::before {
+    width: 100%;
+}
+
+a.forgotPass {
+    color: #6b9db8;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+a.forgotPass:hover {
+    color: #000000;
+}
+
+#register-btn {
+    color: white;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 2px 5px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+#register-btn:hover {
+    width: 100%;
+    background-color: white;
+    color: black;
+}
